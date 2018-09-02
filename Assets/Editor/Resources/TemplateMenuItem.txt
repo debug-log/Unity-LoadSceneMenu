@@ -1,0 +1,12 @@
+﻿        [MenuItem ("Load Scene/#SceneName", false, #Priority)]
+        static void Load#SceneName ()
+        {
+            if (toggleAdditive)
+            {
+                EditorSceneManager.OpenScene ("#ScenePath", OpenSceneMode.Additive);
+            }
+            else
+            {
+                EditorSceneManager.OpenScene ("#ScenePath");
+            }
+        }
