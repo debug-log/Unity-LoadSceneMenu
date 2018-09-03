@@ -2,12 +2,6 @@
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-public class SavedSceneSetup : ScriptableObject
-{
-    public SceneSetup[] sceneSetup;
-}
-
-
 public class EditorLoadScene : MonoBehaviour
 {
 	[MenuItem ("Load Scene/SceneSetup/Save SceneSetup &#s")]
